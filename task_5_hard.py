@@ -40,8 +40,8 @@ class Stopwatch:
 
     @staticmethod
     def format_time(seconds):
-        hrs = seconds 
-        mins = (seconds % 3600) 
+        hrs = seconds // 3600
+        mins = (seconds % 3600) // 60
         secs = seconds % 60
         return f"{hrs:02}:{mins:02}:{secs:02}"
 
